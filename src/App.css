@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container{
   min-height: 100vh;
+  background-color: beige;
+  background-image: url('./bg.jpg') ;
+  color: aliceblue;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* .container::before{
+  
+} */
+
+h1{
+  font-size: 4rem;
+}
+p{
+  font-size: 1.2rem;
+}
+.name,.weather{
+  font-size: 2.5rem;
+}
+.upper{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
+}
+/* .upper p{
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+} */
+.name,.weather{
+  margin-top: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.bottom{
+  position: absolute;
+  bottom: 20rem;
+  width: 100%;
+  margin-top: 20rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10rem;
+}
+input{
+  /* position: relative; */
+  text-align: center;
+  width: 20rem;
+  height: 10rem;
+  padding: 2.5rem;
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 2.5rem;
+  border: none;
+  width: 100%;
+  /* vertical-align: middle; */
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  border-radius: 10rem;
+}
+.feelsLike p{
+  display: inline;
+}
+.tempMax p{
+  display: inline;
+}
+.tempMin p{
+  display: inline;
+}
+.temp h1{
+  display: inline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:focus{
+  /* border: 2px solid black; */
+  outline: none;
 }
