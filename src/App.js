@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import axios from 'axios';
 import './App.css';
 
-const apiKey = "f9b33a08d72829195afab90e2e87ba7e";
-// const apiKey = "4babd81cab56b2491b8d0fdc5c244fc9";
+const apiKey = "API_KEY";
+
 
 
 
