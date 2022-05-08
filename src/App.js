@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import axios from 'axios';
 import './App.css';
 
-const apiKey = "API_KEY";
+const apiKey = process.env.REACT_APP_API_KEY;
 
 
 
